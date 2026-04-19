@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Space Colony</string>
+    <string name="colony_name">Horizon Station</string>
+    <string name="btn_recruit">Recruit Crew Member</string>
+    <string name="btn_quarters">Quarters</string>
+    <string name="btn_simulator">Simulator</string>
+    <string name="btn_mission_control">Mission Control</string>
+    <string name="btn_statistics">Statistics</string>
+    <string name="btn_train">Train Selected</string>
+    <string name="btn_launch">Launch Mission</string>
+    <string name="btn_attack">Attack</string>
+    <string name="btn_defend">Defend</string>
+    <string name="btn_heal">Heal</string>
+    <string name="mission_complete">Mission Complete!</string>
+    <string name="mission_failed">Mission Failed</string>
+    <string name="no_crew">No crew members here</string>
+</resources>

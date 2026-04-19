@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    app:cardBackgroundColor="@color/card_bg"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <!-- Color bar (specialization color) -->
+        <View
+            android:id="@+id/viewColorBar"
+            android:layout_width="4dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="12dp"
+            android:background="@color/accent_cyan"/>
+
+        <!-- Avatar image -->
+        <ImageView
+            android:id="@+id/ivCrewAvatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_pilot"
+            android:contentDescription="Crew avatar"/>
+
+        <!-- Crew info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvCrewName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Name"
+                    android:textColor="@color/text_primary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tvCrewLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QUARTERS"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvCrewSpec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilot"
+                android:textColor="@color/accent_cyan"
+                android:textSize="12sp"
+                android:paddingBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tvCrewStats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Skill: 5  Res: 4  XP: 0"
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp"
+                android:fontFamily="monospace"
+                android:paddingBottom="6dp"/>
+
+            <ProgressBar
+                android:id="@+id/pbCrewEnergy"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:max="20"
+                android:progress="20"
+                android:progressTint="@color/pilot_blue"
+                android:progressBackgroundTint="@color/divider"/>
+        </LinearLayout>
+
+        <!-- Checkbox -->
+        <CheckBox
+            android:id="@+id/cbSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:buttonTint="@color/accent_cyan"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
